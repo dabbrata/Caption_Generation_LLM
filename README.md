@@ -14,7 +14,7 @@ Automatic image captioning is essential for generating natural language descript
 
 ## Dataset
 The dataset to fine tune YOLOv8: 
-We used ADE20K dataset to fine tune the pretrained model. The [dataset](https://www.kaggle.com/datasets/awsaf49/ade20k-dataset) contains several classes, among them some parts of which were included in our study.
+The [dataset](https://www.kaggle.com/datasets/awsaf49/ade20k-dataset) used to fine-tune the YOLOv8 model was ADE20K, which contains a wide range of object classes. For our study, we selected and utilized only a subset of these classes relevant to our objectives.
 
 ## Procedure
 The proposed image captioning framework begins by passing an input image through a fine-tuned YOLOv8 model, which detects objects and extracts their class names, confidence scores, and bounding box coordinates. Detections with confidence scores above 0.5 are retained and used to create a structured textual prompt that captures the object names and their spatial relationships. This prompt is then fed into a Large Language Model (LLM), which generates a contextually rich and coherent natural language caption. By leveraging YOLOv8’s efficient object detection and the LLM’s language understanding, the framework produces accurate captions with reduced inference time compared to traditional CNN-RNN and multimodal LLM-based approaches.

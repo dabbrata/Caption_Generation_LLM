@@ -2,4 +2,5 @@ ultralytics==8.1.15
 numpy==1.26.4
 tensorflow==2.16.1
 matplotlib==3.7.5
+torch==2.1.0
 
